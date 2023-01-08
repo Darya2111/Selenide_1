@@ -21,5 +21,14 @@ public class SelenideRepositoryTest {
         $$("ul.repo-list li").first().$("a").click();
         // проверить: в заголовке встречается selenide/selenide
         $("[class='v-align-middle']").shouldHave(text("selenide/selenide"));
+
+        // Общая структура всех тестов:
+        // ARRANGE - подготовка
+        // ACT - действие
+        // ASSERT - проверка
+
+        // GIVEN - подготовка
+        // WHEN - действие
+        // THEN - проверка
     }
 }
